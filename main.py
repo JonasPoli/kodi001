@@ -19,45 +19,116 @@ _handle = int(sys.argv[1])
 # Here we use a fixed set of properties simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some web-site or online service.
-VIDEOS = {'Animals': [{'name': 'Crab',
-                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/04/crab-screenshot.jpg',
-                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/04/crab.mp4',
-                       'genre': 'Animals'},
-                      {'name': 'Alligator',
-                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/04/alligator-screenshot.jpg',
-                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/04/alligator.mp4',
-                       'genre': 'Animals'},
-                      {'name': 'Turtle',
-                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/04/turtle-screenshot.jpg',
-                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/04/turtle.mp4',
-                       'genre': 'Animals'}
-                      ],
-            'Cars': [{'name': 'Postal Truck',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal.mp4',
-                      'genre': 'Cars'},
-                     {'name': 'Traffic',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1.mp4',
-                      'genre': 'Cars'},
-                     {'name': 'Traffic Arrows',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows.mp4',
-                      'genre': 'Cars'}
-                     ],
-            'Food': [{'name': 'Chicken',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbq_chicken-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbqchicken.mp4',
-                      'genre': 'Food'},
-                     {'name': 'Hamburger',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger.mp4',
-                      'genre': 'Food'},
-                     {'name': 'Pizza',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/pizza-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/pizza.mp4',
-                      'genre': 'Food'}
-                     ]}
+VIDEOS = {            '.Hack//Sekai no Mukou ni': [
+                       {'name': 'Parte 03',
+                       'thumb': '',
+                       'video': 'http://www.blogger.com/video-play.mp4?contentId=5233b726ebe74ce5',
+                       'genre': '.Hack//Sekai no Mukou ni'},
+
+                       {'name': 'Parte 04',
+                       'thumb': '',
+                       'video': 'http://www.blogger.com/video-play.mp4?contentId=49107ba72fa097cd',
+                       'genre': '.Hack//Sekai no Mukou ni'} ],
+            '10 Things I Hate About You LEG': [
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=4fc3fc31c5cab647',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=bc3daee00b1bd07d',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=66fe3e3f462d9bfd',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=ac8ae20fc3c49d27',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=ee6c48b2201677b8',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=f070031cc138ce7a',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=1a8ce3d925734901',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=d058b38fce71ad9a',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=fc9477e2494d16ca',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=367bfcee532b690b',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=ddda53204cf2bfa2',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=b026c7b35f062c20',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=95f5ab7bc0e02dae',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=1b81ce86058477d5',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=d35ff38f2b423bfc',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=e9606ea35aa5c5eb',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=4f7eed42ca4c4e9e',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=29d05c0120b736a0',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=8e22220fa7bcc51f',
+                       'genre': '10 Things I Hate About You LEG'},
+
+                       {'name': '10 Things I Hate About You',
+                       'thumb': 'https://ia.media-imdb.com/images/M/MV5BMmVhZjhlZDYtMDAwZi00MDcyLTgzOTItOWNiZjY0YmE0MGE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+                       'video': 'https://www.blogger.com/video-play.mp4?contentId=7e0f197c0c78b85',
+                       'genre': '10 Things I Hate About You LEG'} ]}
 
 
 def get_url(**kwargs):
